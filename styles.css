@@ -2,3 +2,11 @@
     font-size: x-large;
     font-weight: bold;
 }
+svg{
+    width: 25px;
+}
+input[type=radio] {
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+}
