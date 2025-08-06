@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" class="css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="sample">
+        <div class="card text-right w-75 mt-3 mx-auto">
+            <div class="card-header"> Payment form example </div>
+                <div class="card-body">
+                    <div class="alert alert-danger" role="alert">
+                    Some fields are missing
+                    </div>
+                    <div class="row mt-4">
+                        <div class="card-number col-5">
+                            <label class="form-label" for="card-number">Card #</label>
+                            <input class="form-control type="text" name="card-number" id="number" placeholder="XXXXXXXXXXXXXXXX" required/>
+                        </div>
+                        <div class="cvc col-3">
+                            <label class="form-label" for="cvc">CVC #</label>
+                            <input class="form-control" type="text" name="cvc-info" id="cvc" placeholder="0000" required/>
+                        </div>
+                        <div class="amount col-4">
+                            <label class="form-label" for="amount">Amount $</label>
+                            <input class="form-control" type="text" name="amount-info" id="amount" placeholder="Amount" required/>
+                        </div>
+                    </div>
+                </div>
+            <div class="card-footer text-body-secondary">
+                <button type="submit" class="btn btn-primary float-end">Send</button>
+                <button type="button" class="btn btn-secondary me-2 float-end">Cancel</button>
+            </div>
+        </div>
+
+        <div class="name-info">
+            <label for="name-info">Enter Full Name</label>
+                <input type="text" name="name-info" id="name" placeholder="first and last name" required/>
+        </div>
+        <div class="password-info">
+            <label for="password">Enter Password</label>
+            <input type="password" name="password" id="password" required/>
+        </div>
+
+
+        <div class="browser-selection">
+            <label for="">Select Browser</label>
+                <div class="browser-selection">
+                    <div>
+                        <input type="radio" name="browser" id="chrome" value="chrome"/>
+                        <label for="chrome">Chrome</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="browser" id="firefox" value="firefox"/>
+                        <label for="firefox">Firefox</label>
+                    </div>
+                </div>    
+        </div>
+
+
+
+    <div class="attach-file">
+        <label for="file">Attach a file</label>
+        <input type="file" name="file-attachment" value="">
+    </div>
+
+
+
+    <div class="car-color">
+        <label for="car-color">Choose a Car Color</label>
+        <select name="car-color">
+            <option value="">--Choose a car color below--</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+        </select>
+    </div>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+    </form>
+ 
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>   
+</body>
+</html>
